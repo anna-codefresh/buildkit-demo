@@ -12,4 +12,4 @@ RUN mkdir -p -m 0600 ~/.ssh && ssh-keyscan github.com >> ~/.ssh/known_hosts
 
 # clone our private repository
 
-RUN --mount=type=ssh git clone git@github.com:anna-codefresh/buildkit-private-demo.git
+RUN --mount=type=ssh,id=github git clone git@github.com:anna-codefresh/buildkit-private-demo.git
